@@ -6,8 +6,8 @@
 %endif
 
 Name:           openstack-%{pypi_name}
-Version:        1.0.0
-Release:        1%{?dist}
+Version:        XXX
+Release:        XXX
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
@@ -242,8 +242,3 @@ exit 0
 
 
 %changelog
-* Tue Dec  1 2015 Haïkel Guémar <hguemar@fedoraproject.org> - 1.0.0-1
-- Upstream 1.0.0 (liberty)
-
-* Thu Oct 15 2015 Marcos Fermin Lobo <marcos.fermin.lobo@cern.ch> - 0.1.0-1
-- First RPM
