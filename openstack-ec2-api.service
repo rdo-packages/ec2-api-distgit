@@ -1,0 +1,13 @@
+[Unit]
+Description=OpenStack EC2 API Server
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=ec2api
+ExecStart=/usr/bin/ec2-api
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+

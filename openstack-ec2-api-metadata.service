@@ -1,0 +1,13 @@
+[Unit]
+Description=OpenStack EC2 API Metadata Server
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=ec2api
+ExecStart=/usr/bin/ec2-api-metadata
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
