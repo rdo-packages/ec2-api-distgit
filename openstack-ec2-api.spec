@@ -220,7 +220,7 @@ exit 0
 %license LICENSE
 %doc README.rst
 %{python2_sitelib}/ec2api
-%{python2_sitelib}/ec2_api-*.egg-info
+%{python2_sitelib}/ec2_api-*-py?.?.egg-info
 
 %files
 %{_bindir}/%{pypi_name}*
