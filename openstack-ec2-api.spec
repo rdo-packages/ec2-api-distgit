@@ -5,6 +5,8 @@
 %{!?python3_shortver: %global python3_shortver %(%{__python3} -c 'import sys; print(str(sys.version_info.major) + "." + str(sys.version_info.minor))')}
 %endif
 
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+
 Name:           openstack-%{pypi_name}
 Version:        XXX
 Release:        XXX
@@ -131,7 +133,7 @@ BuildRequires:  python-sphinx
 Documentation for OpenStack EC2 API
 
 %prep
-%autosetup -n %{pypi_name}-%{version}
+%autosetup -n %{pypi_name}-%{upstream_version}
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
@@ -211,7 +213,7 @@ exit 0
 %license LICENSE
 %doc README.rst
 %{python2_sitelib}/ec2api
-%{python2_sitelib}/ec2_api-%{version}-py?.?.egg-info
+%{python2_sitelib}/ec2_api-*-py?.?.egg-info
 
 %files
 %{_bindir}/%{pypi_name}*
