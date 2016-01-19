@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-13a99529ff88ece6674196e5d8c7f25279e0311b	ec2-api-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+76b9e7b5a375299098c7b99e6aa399fded690623       	ec2-api-distgit-core
+13a99529ff88ece6674196e5d8c7f25279e0311b        	ec2-api-distgit-ptl
+global:Registered-Users		Registered Users
