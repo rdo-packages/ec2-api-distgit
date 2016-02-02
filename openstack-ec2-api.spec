@@ -1,7 +1,8 @@
 %global pypi_name ec2-api
 
 %if 0%{?fedora}
-%global with_python3 1
+# FIXME: python3 clients are not packaged yet
+%global with_python3 0
 %{!?python3_shortver: %global python3_shortver %(%{__python3} -c 'import sys; print(str(sys.version_info.major) + "." + str(sys.version_info.minor))')}
 %endif
 
