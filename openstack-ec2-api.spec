@@ -199,10 +199,10 @@ mkdir -p %{buildroot}%{python2_sitelib}/buckets
 
 
 %pre
-# 1777:1777 for ec2api
-getent group ec2api >/dev/null || groupadd -r --gid 1777 ec2api
+# Using dynamic UID and GID for ec2api
+getent group ec2api >/dev/null || groupadd -r ec2api
 getent passwd ec2api >/dev/null || \
-useradd --uid 1777 -r -g ec2api -d %{_sharedstatedir}/ec2api -s /sbin/nologin \
+useradd -r -g ec2api -d %{_sharedstatedir}/ec2api -s /sbin/nologin \
 -c "OpenStack EC2 API Daemons" ec2api
 exit 0
 
