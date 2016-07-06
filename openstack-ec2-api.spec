@@ -6,7 +6,7 @@
 %endif
 
 Name:           openstack-%{pypi_name}
-Version:        1.0.2
+Version:        2.0.0
 Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
@@ -242,6 +242,9 @@ exit 0
 
 
 %changelog
+* Wed Jul 06 2016 Haikel Guemar <hguemar@fedoraproject.org> 2.0.0-1
+- Update to 2.0.0
+
 * Thu Mar 24 2016 Haikel Guemar <hguemar@fedoraproject.org> 1.0.2-1
 - Update to 1.0.2
 
