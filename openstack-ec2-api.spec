@@ -24,40 +24,43 @@ BuildArch:      noarch
 
 BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
-BuildRequires:  python-pbr >= 0.6
+BuildRequires:  python-pbr >= 1.6
 BuildRequires:  systemd
 
 Requires: python-anyjson >= 0.3.3
 Requires: python-babel >= 1.3
 Requires: python-boto >= 2.32.1
-Requires: python-eventlet >= 0.16.1
+Requires: python-eventlet >= 0.18.2
 Requires: python-greenlet >= 0.3.2
 Requires: python-httplib2 >= 0.7.5
 Requires: python-iso8601 >= 0.1.9
 Requires: python-jsonschema >= 2.0.0
 Requires: python-lxml >= 2.3
-Requires: python-oslo-config >= 1.9.3
-Requires: python-oslo-concurrency >= 1.8.0
-Requires: python-oslo-db >= 1.7.0
-Requires: python-oslo-log >= 1.0.0
-Requires: python-oslo-messaging >= 1.8.0
-Requires: python-oslo-serialization >= 1.4.0
-Requires: python-oslo-utils >= 1.4.0
+Requires: python-oslo-config >= 2:3.7.0
+Requires: python-oslo-concurrency >= 3.5.0
+Requires: python-oslo-context >= 0.2.0
+Requires: python-oslo-db >= 4.1.0
+Requires: python-oslo-log >= 1.14.0
+Requires: python-oslo-messaging >= 4.0.0
+Requires: python-oslo-serialization >= 1.10.0
+Requires: python-oslo-service >= 1.0.0
+Requires: python-oslo-utils >= 3.5.0
 Requires: python-paramiko >= 1.13.0
 Requires: python-paste
 Requires: python-paste-deploy >= 1.5.0
-Requires: python-pbr >= 0.6
+Requires: python-pbr >= 1.6
 Requires: python-pyasn1
 Requires: python-pyasn1-modules
-Requires: python-cinderclient >= 1.1.0
-Requires: python-glanceclient >= 0.15.0
-Requires: python-keystoneclient >= 1.2.0
-Requires: python-neutronclient >= 2.3.11
-Requires: python-novaclient >= 2.22.0
+Requires: python-cinderclient >= 1.3.1
+Requires: python-glanceclient >= 1:2.0.0
+Requires: python-keystoneclient >= 1:1.6.0
+Requires: python-neutronclient >= 2.6.0
+Requires: python-novaclient >= 1:2.29.0
+Requires: python-openstackclient >= 2.1.0
 Requires: python-routes >= 1.12.3
 Requires: python-six >= 1.9.0
-Requires: python-sqlalchemy >= 0.9.7
-Requires: python-migrate >= 0.9.5
+Requires: python-sqlalchemy >= 1.0.10
+Requires: python-migrate >= 0.9.6
 Requires: python-stevedore >= 1.3.0
 Requires: python-webob >= 1.2.3
 Requires: python2-ec2-api = %{version}-%{release}
@@ -86,34 +89,37 @@ BuildRequires:  python-tools
 Requires: python3-anyjson >= 0.3.3
 Requires: python3-babel >= 1.3
 Requires: python3-boto >= 2.32.1
-Requires: python3-eventlet >= 0.16.1
+Requires: python3-eventlet >= 0.18.2
 Requires: python3-greenlet >= 0.3.2
 Requires: python3-httplib2 >= 0.7.5
 Requires: python3-iso8601 >= 0.1.9
 Requires: python3-jsonschema >= 2.0.0
 Requires: python3-lxml >= 2.3
-Requires: python3-oslo-config >= 1.9.3
-Requires: python3-oslo-concurrency >= 1.8.0
-Requires: python3-oslo-db >= 1.7.0
-Requires: python3-oslo-log >= 1.0.0
-Requires: python3-oslo-messaging >= 1.8.0
-Requires: python3-oslo-serialization >= 1.4.0
-Requires: python3-oslo-utils >= 1.4.0
+Requires: python3-oslo-config >= 2:3.7.0
+Requires: python3-oslo-concurrency >= 3.5.0
+Requires: python3-oslo-context >= 0.2.0
+Requires: python3-oslo-db >= 4.1.0
+Requires: python3-oslo-log >= 1.14.0
+Requires: python3-oslo-messaging >= 4.0.0
+Requires: python3-oslo-serialization >= 1.10.0
+Requires: python3-oslo-service >= 1.0.0
+Requires: python3-oslo-utils >= 3.5.0
 Requires: python3-paramiko >= 1.13.0
 Requires: python3-paste
 Requires: python3-paste-deploy >= 1.5.0
 Requires: python3-pbr >= 0.6
 Requires: python3-pyasn1
 Requires: python3-pyasn1-modules
-Requires: python3-cinderclient >= 1.1.0
-Requires: python3-glanceclient >= 0.15.0
-Requires: python3-keystoneclient >= 1.2.0
-Requires: python3-neutronclient >= 2.3.11
-Requires: python3-novaclient >= 2.22.0
+Requires: python3-cinderclient >= 1.3.1
+Requires: python3-glanceclient >= 1:2.0.0
+Requires: python3-keystoneclient >= 1:1.6.0
+Requires: python3-neutronclient >= 2.6.0
+Requires: python3-novaclient >= 1:2.29.0
+Requires: python3-openstackclient >= 2.1.0
 Requires: python3-routes >= 1.12.3
 Requires: python3-six >= 1.9.0
-Requires: python3-sqlalchemy >= 0.9.7
-Requires: python3-migrate >= 0.9.5
+Requires: python3-sqlalchemy >= 1.0.10
+Requires: python3-migrate >= 0.9.6
 Requires: python3-stevedore >= 1.3.0
 Requires: python3-webob >= 1.2.3
 
