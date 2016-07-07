@@ -7,7 +7,7 @@
 
 Name:           openstack-%{pypi_name}
 Version:        2.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
@@ -30,7 +30,7 @@ BuildRequires:  systemd
 Requires: python-anyjson >= 0.3.3
 Requires: python-babel >= 1.3
 Requires: python-boto >= 2.32.1
-Requires: python-eventlet >= 0.18.2
+Requires: python-eventlet >= 0.17.4
 Requires: python-greenlet >= 0.3.2
 Requires: python-httplib2 >= 0.7.5
 Requires: python-iso8601 >= 0.1.9
@@ -89,7 +89,7 @@ BuildRequires:  python-tools
 Requires: python3-anyjson >= 0.3.3
 Requires: python3-babel >= 1.3
 Requires: python3-boto >= 2.32.1
-Requires: python3-eventlet >= 0.18.2
+Requires: python3-eventlet >= 0.17.4
 Requires: python3-greenlet >= 0.3.2
 Requires: python3-httplib2 >= 0.7.5
 Requires: python3-iso8601 >= 0.1.9
@@ -248,6 +248,9 @@ exit 0
 
 
 %changelog
+* Thu Jul  7 2016 Haïkel Guémar <hguemar@fedoraproject.org> - 2.0.0-2
+- Fix eventlet min requirements
+
 * Wed Jul 06 2016 Haikel Guemar <hguemar@fedoraproject.org> 2.0.0-1
 - Update to 2.0.0
 
