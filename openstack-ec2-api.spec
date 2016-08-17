@@ -31,6 +31,7 @@ BuildRequires:  systemd
 Requires: python-anyjson >= 0.3.3
 Requires: python-babel >= 1.3
 Requires: python-boto >= 2.32.1
+Requires: python-botocore >= 1.0.0
 Requires: python-eventlet >= 0.17.4
 Requires: python-greenlet >= 0.3.2
 Requires: python-httplib2 >= 0.7.5
@@ -90,6 +91,7 @@ BuildRequires:  python-tools
 Requires: python3-anyjson >= 0.3.3
 Requires: python3-babel >= 1.3
 Requires: python3-boto >= 2.32.1
+Requires: python3-botocore >= 1.0.0
 Requires: python3-eventlet >= 0.17.4
 Requires: python3-greenlet >= 0.3.2
 Requires: python3-httplib2 >= 0.7.5
