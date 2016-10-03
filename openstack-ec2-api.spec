@@ -262,3 +262,4 @@ exit 0
 
 * Thu Oct 15 2015 Marcos Fermin Lobo <marcos.fermin.lobo@cern.ch> - 0.1.0-1
 - First RPM
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/ec2-api/commit/?id=a5e408ab96bdb2a530ccb45542a1b6085e4b724d
