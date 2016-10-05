@@ -253,3 +253,4 @@ exit 0
 
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/ec2-api/commit/?id=a5e408ab96bdb2a530ccb45542a1b6085e4b724d
