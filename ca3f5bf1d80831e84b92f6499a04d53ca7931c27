@@ -16,6 +16,24 @@
       "revId": "ca3f5bf1d80831e84b92f6499a04d53ca7931c27",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad9bd40_8e2bc32f",
+        "filename": "openstack-ec2-api.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 223,
+      "author": {
+        "id": 127
+      },
+      "writtenOn": "2016-10-14T16:53:24Z",
+      "side": 1,
+      "message": "then it should be synced the other way on both branches",
+      "parentUuid": "9ad9bd40_aef887c5",
+      "revId": "ca3f5bf1d80831e84b92f6499a04d53ca7931c27",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
