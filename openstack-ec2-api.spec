@@ -7,8 +7,8 @@
 %endif
 
 Name:           openstack-%{pypi_name}
-Version:        2.0.0
-Release:        2%{?dist}
+Version:        3.0.2
+Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
@@ -251,6 +251,9 @@ exit 0
 
 
 %changelog
+* Wed Oct 26 2016 Jon Schlueter <jschluet@redhat.com> 3.0.2-1
+- Update to 3.0.2
+
 * Thu Jul  7 2016 Haïkel Guémar <hguemar@fedoraproject.org> - 2.0.0-2
 - Fix eventlet min requirements
 
