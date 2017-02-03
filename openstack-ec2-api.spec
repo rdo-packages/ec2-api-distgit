@@ -34,39 +34,40 @@ Requires: python-anyjson >= 0.3.3
 Requires: python-babel >= 2.3.4
 Requires: python-boto >= 2.32.1
 Requires: python-botocore >= 1.0.0
-Requires: python-eventlet >= 0.17.4
+Requires: python-eventlet >= 0.18.2
 Requires: python-greenlet >= 0.3.2
 Requires: python-httplib2 >= 0.7.5
 Requires: python-iso8601 >= 0.1.9
 Requires: python-jsonschema >= 2.0.0
+Requires: python-keystoneauth1 >= 2.18.0
 Requires: python-lxml >= 2.3
 Requires: python-oslo-config >= 2:3.14.0
 Requires: python-oslo-concurrency >= 3.8.0
 Requires: python-oslo-context >= 2.9.0
-Requires: python-oslo-db >= 4.10.0
-Requires: python-oslo-log >= 1.14.0
-Requires: python-oslo-messaging >= 5.2.0
+Requires: python-oslo-db >= 4.15.0
+Requires: python-oslo-log >= 3.11.0
+Requires: python-oslo-messaging >= 5.14.0
 Requires: python-oslo-serialization >= 1.10.0
 Requires: python-oslo-service >= 1.10.0
-Requires: python-oslo-utils >= 3.16.0
+Requires: python-oslo-utils >= 3.18.0
 Requires: python-paramiko >= 1.13.0
 Requires: python-paste
 Requires: python-paste-deploy >= 1.5.0
-Requires: python-pbr >= 1.6
+Requires: python-pbr >= 1.8
 Requires: python-pyasn1
 Requires: python-pyasn1-modules
 Requires: python-cinderclient >= 1.6.0
-Requires: python-glanceclient >= 1:2.3.0
-Requires: python-keystoneclient >= 1:2.0.0
+Requires: python-glanceclient >= 1:2.5.0
+Requires: python-keystoneclient >= 1:3.8.0
 Requires: python-neutronclient >= 5.1.0
-Requires: python-novaclient >= 1:2.33.0
-Requires: python-openstackclient >= 2.1.0
+Requires: python-novaclient >= 1:6.0.0
+Requires: python-openstackclient >= 3.3.0
 Requires: python-routes >= 1.12.3
 Requires: python-six >= 1.9.0
 Requires: python-sqlalchemy >= 1.0.10
 Requires: python-migrate >= 0.9.6
 Requires: python-stevedore >= 1.3.0
-Requires: python-webob >= 1.2.3
+Requires: python-webob >= 1.6.0
 Requires: python2-ec2-api = %{version}-%{release}
  
 %description
