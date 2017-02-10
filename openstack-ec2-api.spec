@@ -142,6 +142,14 @@ BuildRequires:  python-sphinx
 %description -n python-%{pypi_name}-doc
 Documentation for OpenStack EC2 API
 
+%package -n python-%{pypi_name}-tests
+Summary:        Tempest plugin and tests for OpenStack EC2 API
+
+Requires:   python-%{pypi_name} = %{version}-%{release}
+
+%description -n python-%{pypi_name}-tests
+Tempest plugin and unit tests for OpenStack EC2 API
+
 %prep
 %autosetup -n %{pypi_name}-%{upstream_version}
 # Remove bundled egg-info
@@ -165,13 +173,17 @@ LANG=en_US.UTF-8 %{__python3} setup.py build
 popd
 %endif
 
-# generate html docs 
+# generate html docs
 sphinx-build doc/source html
 # remove the sphinx-build leftovers
 rm -rf html/.{doctrees,buildinfo}
 
 %install
 %{__python2} setup.py install --skip-build --root %{buildroot}
+
+%global service ec2-api
+# Create fake egg-info for the tempest plugin
+%py2_entrypoint ec2_api %{service}
 
 %if 0%{?with_python3}
 pushd %{py3dir}
@@ -223,6 +235,7 @@ exit 0
 %license LICENSE
 %doc README.rst
 %{python2_sitelib}/ec2api
+%exclude %{python2_sitelib}/ec2api/tests
 %{python2_sitelib}/ec2_api-*-py?.?.egg-info
 
 %files
@@ -239,7 +252,7 @@ exit 0
 
 # Files for python3
 %if 0%{?with_python3}
-%files -n python3-%{pypi_name} 
+%files -n python3-%{pypi_name}
 %doc README.rst
 %license LICENSE
 %{_bindir}/python3-%{pypi_name}
@@ -252,5 +265,9 @@ exit 0
 %files -n python-%{pypi_name}-doc
 %doc html
 
+%files -n python-%{pypi_name}-tests
+%license LICENSE
+%{python2_sitelib}/ec2api/tests
+%{python2_sitelib}/ec2_api_tests.egg-info
 
 %changelog
