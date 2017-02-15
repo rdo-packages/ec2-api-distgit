@@ -29,6 +29,7 @@ BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
 BuildRequires:  python-pbr >= 1.6
 BuildRequires:  systemd
+BuildRequires:  openstack-macros
 
 Requires: python-anyjson >= 0.3.3
 Requires: python-babel >= 2.3.4
