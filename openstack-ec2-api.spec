@@ -9,8 +9,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           openstack-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        4.0.0
+Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
@@ -272,3 +272,6 @@ exit 0
 %{python2_sitelib}/ec2_api_tests.egg-info
 
 %changelog
+* Mon Feb 20 2017 Alfredo Moralejo <amoralej@redhat.com> 4.0.0-1
+- Update to 4.0.0
+
