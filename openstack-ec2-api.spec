@@ -31,6 +31,15 @@ BuildRequires:  python-pbr >= 1.6
 BuildRequires:  systemd
 BuildRequires:  openstack-macros
 
+Requires: python2-ec2-api = %{version}-%{release}
+
+%description
+Support of EC2 API for OpenStack.
+
+%package -n     python2-%{pypi_name}
+Summary:        Support of EC2 API for OpenStack
+%{?python_provide:%python_provide python2-%{pypi_name}}
+
 Requires: python-anyjson >= 0.3.3
 Requires: python-babel >= 2.3.4
 Requires: python-boto >= 2.32.1
@@ -69,14 +78,6 @@ Requires: python-sqlalchemy >= 1.0.10
 Requires: python-migrate >= 0.9.6
 Requires: python-stevedore >= 1.3.0
 Requires: python-webob >= 1.6.0
-Requires: python2-ec2-api = %{version}-%{release}
- 
-%description
-Support of EC2 API for OpenStack.
-
-%package -n     python2-%{pypi_name}
-Summary:        Support of EC2 API for OpenStack
-%{?python_provide:%python_provide python2-%{pypi_name}}
 
 %description -n python2-%{pypi_name}
 Support of EC2 API for OpenStack
@@ -146,7 +147,7 @@ Documentation for OpenStack EC2 API
 %package -n python-%{pypi_name}-tests
 Summary:        Tempest plugin and tests for OpenStack EC2 API
 
-Requires:   python-%{pypi_name} = %{version}-%{release}
+Requires:   python2-%{pypi_name} = %{version}-%{release}
 
 %description -n python-%{pypi_name}-tests
 Tempest plugin and unit tests for OpenStack EC2 API
