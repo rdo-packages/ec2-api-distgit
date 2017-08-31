@@ -27,7 +27,7 @@ BuildArch:      noarch
 
 BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
-BuildRequires:  python-pbr >= 1.6
+BuildRequires:  python-pbr >= 2.0.0
 BuildRequires:  systemd
 BuildRequires:  openstack-macros
 
@@ -49,36 +49,37 @@ Requires: python-greenlet >= 0.3.2
 Requires: python-httplib2 >= 0.7.5
 Requires: python-iso8601 >= 0.1.9
 Requires: python-jsonschema >= 2.0.0
-Requires: python-keystoneauth1 >= 2.18.0
+Requires: python-keystoneauth1 >= 3.1.0
 Requires: python-lxml >= 2.3
 Requires: python-oslo-cache >= 1.5.0
-Requires: python-oslo-config >= 2:3.14.0
+Requires: python-oslo-config >= 2:4.0.0
 Requires: python-oslo-concurrency >= 3.8.0
-Requires: python-oslo-context >= 2.9.0
+Requires: python-oslo-context >= 2.14.0
 Requires: python-oslo-db >= 4.15.0
-Requires: python-oslo-log >= 3.11.0
+Requires: python-oslo-log >= 3.30.0
 Requires: python-oslo-messaging >= 5.14.0
 Requires: python-oslo-serialization >= 1.10.0
 Requires: python-oslo-service >= 1.10.0
-Requires: python-oslo-utils >= 3.18.0
+Requires: python-oslo-utils >= 3.20.0
 Requires: python-paramiko >= 1.13.0
 Requires: python-paste
 Requires: python-paste-deploy >= 1.5.0
-Requires: python-pbr >= 1.8
+Requires: python-pbr >= 2.0.0
 Requires: python-pyasn1
 Requires: python-pyasn1-modules
-Requires: python-cinderclient >= 1.6.0
-Requires: python-glanceclient >= 1:2.5.0
+Requires: python-cinderclient >= 3.1.0
+Requires: python-glanceclient >= 1:2.8.0
 Requires: python-keystoneclient >= 1:3.8.0
-Requires: python-neutronclient >= 5.1.0
-Requires: python-novaclient >= 1:6.0.0
+Requires: python-neutronclient >= 6.3.0
+Requires: python-novaclient >= 1:9.1.0
 Requires: python-openstackclient >= 3.3.0
-Requires: python-routes >= 1.12.3
+Requires: python-routes >= 2.3.1
 Requires: python-six >= 1.9.0
 Requires: python-sqlalchemy >= 1.0.10
-Requires: python-migrate >= 0.9.6
+Requires: python-migrate >= 0.11.0
 Requires: python-stevedore >= 1.3.0
-Requires: python-webob >= 1.6.0
+Requires: python-webob >= 1.7.1
+Requires: python-cryptography >= 1.6
 
 %description -n python2-%{pypi_name}
 Support of EC2 API for OpenStack
@@ -91,7 +92,7 @@ Summary:        Support of EC2 API for OpenStack
 
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
-BuildRequires:  python3-pbr >= 0.6
+BuildRequires:  python3-pbr >= 2.0.0
 BuildRequires:  python-tools
 
 Requires: python3-anyjson >= 0.3.3
@@ -105,33 +106,34 @@ Requires: python3-iso8601 >= 0.1.9
 Requires: python3-jsonschema >= 2.0.0
 Requires: python3-lxml >= 2.3
 Requires: python3-oslo-cache >= 1.5.0
-Requires: python3-oslo-config >= 2:3.7.0
+Requires: python3-oslo-config >= 2:4.0.0
 Requires: python3-oslo-concurrency >= 3.5.0
-Requires: python3-oslo-context >= 0.2.0
+Requires: python3-oslo-context >= 2.14.0
 Requires: python3-oslo-db >= 4.1.0
-Requires: python3-oslo-log >= 1.14.0
+Requires: python3-oslo-log >= 3.30.0
 Requires: python3-oslo-messaging >= 4.0.0
 Requires: python3-oslo-serialization >= 1.10.0
 Requires: python3-oslo-service >= 1.0.0
-Requires: python3-oslo-utils >= 3.5.0
+Requires: python3-oslo-utils >= 3.20.0
 Requires: python3-paramiko >= 1.13.0
 Requires: python3-paste
 Requires: python3-paste-deploy >= 1.5.0
-Requires: python3-pbr >= 0.6
+Requires: python3-pbr >= 2.2.0
 Requires: python3-pyasn1
 Requires: python3-pyasn1-modules
-Requires: python3-cinderclient >= 1.3.1
-Requires: python3-glanceclient >= 1:2.0.0
+Requires: python3-cinderclient >= 3.1.0
+Requires: python3-glanceclient >= 1:2.8.0
 Requires: python3-keystoneclient >= 1:1.6.0
-Requires: python3-neutronclient >= 2.6.0
-Requires: python3-novaclient >= 1:2.29.0
-Requires: python3-openstackclient >= 2.1.0
-Requires: python3-routes >= 1.12.3
+Requires: python3-neutronclient >= 6.3.0
+Requires: python3-novaclient >= 1:9.1.0
+Requires: python3-openstackclient >= 3.3.0
+Requires: python3-routes >= 2.3.1
 Requires: python3-six >= 1.9.0
 Requires: python3-sqlalchemy >= 1.0.10
-Requires: python3-migrate >= 0.9.6
+Requires: python3-migrate >= 0.11.0
 Requires: python3-stevedore >= 1.3.0
-Requires: python3-webob >= 1.2.3
+Requires: python3-webob >= 1.7.1
+Requires: python3-cryptography >= 1.6
 
 %description -n python3-%{pypi_name}
 Support of EC2 API for OpenStack
