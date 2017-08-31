@@ -6,16 +6,20 @@
 %{!?python3_shortver: %global python3_shortver %(%{__python3} -c 'import sys; print(str(sys.version_info.major) + "." + str(sys.version_info.minor))')}
 %endif
 
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%global commit 74906017f7bb7e273600b57e9f6131afa7ac5f7d
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
 
 Name:           openstack-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        4.1.0
+Release:        0.1%{?alphatag}%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
 URL:            https://launchpad.net/ec2-api
-Source0:        https://pypi.io/packages/source/e/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+Source0:        https://github.com/openstack/%{pypi_name}/archive/%{commit}.tar.gz#/%{pypi_name}-%{shortcommit}.tar.gz
 Source1:        openstack-ec2-api.service
 Source2:        openstack-ec2-api-metadata.service
 Source3:        openstack-ec2-api-s3.service
@@ -30,6 +34,7 @@ BuildRequires:  python-setuptools
 BuildRequires:  python-pbr >= 2.0.0
 BuildRequires:  systemd
 BuildRequires:  openstack-macros
+BuildRequires:  git
 
 Requires: python2-ec2-api = %{version}-%{release}
 
@@ -157,7 +162,7 @@ Requires:   python2-%{pypi_name} = %{version}-%{release}
 Tempest plugin and unit tests for OpenStack EC2 API
 
 %prep
-%autosetup -n %{pypi_name}-%{upstream_version}
+%autosetup -n %{pypi_name}-%{upstream_version} -S git
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
@@ -277,3 +282,6 @@ exit 0
 %{python2_sitelib}/ec2_api_tests.egg-info
 
 %changelog
+* Thu Aug 31 2017 Haïkel Guémar <hguemar@fedoraproject.org> - 4.1.0-0.1.74906017git
+- Pike update (74906017f7bb7e273600b57e9f6131afa7ac5f7d)
+
