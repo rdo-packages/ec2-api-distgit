@@ -8,6 +8,9 @@
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
+%global common_desc \
+Support of EC2 API for OpenStack.
+
 Name:           openstack-%{pypi_name}
 Version:        XXX
 Release:        XXX
@@ -34,7 +37,7 @@ BuildRequires:  openstack-macros
 Requires: python2-ec2-api = %{version}-%{release}
 
 %description
-Support of EC2 API for OpenStack.
+%{common_desc}
 
 %package -n     python2-%{pypi_name}
 Summary:        Support of EC2 API for OpenStack
@@ -82,7 +85,7 @@ Requires: python-webob >= 1.7.1
 Requires: python-cryptography >= 1.6
 
 %description -n python2-%{pypi_name}
-Support of EC2 API for OpenStack
+%{common_desc}
 
 # Python3 package
 %if 0%{?with_python3}
@@ -136,7 +139,7 @@ Requires: python3-webob >= 1.7.1
 Requires: python3-cryptography >= 1.6
 
 %description -n python3-%{pypi_name}
-Support of EC2 API for OpenStack
+%{common_desc}
 %endif
 
 # Documentation package
@@ -146,7 +149,7 @@ Summary:        Documentation for OpenStack EC2 API
 BuildRequires:  python-sphinx
 
 %description -n python-%{pypi_name}-doc
-Documentation for OpenStack EC2 API
+%{common_desc}
 
 %package -n python-%{pypi_name}-tests
 Summary:        Tempest plugin and tests for OpenStack EC2 API
