@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_f4ba1ce0",
+        "filename": "openstack-ec2-api.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-09-06T08:59:17Z",
+      "side": 1,
+      "message": "We should add some text to specify this is the documentation (see earlier text, it is not the same as %{common_desc}",
+      "revId": "7ccacc1bd54a58eae2b89ac58324e8ea3ac79ac7",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
