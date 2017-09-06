@@ -149,7 +149,7 @@ Summary:        Documentation for OpenStack EC2 API
 BuildRequires:  python-sphinx
 
 %description -n python-%{pypi_name}-doc
-%{common_desc}
+Documentation for OpenStack EC2 API
 
 %package -n python-%{pypi_name}-tests
 Summary:        Tempest plugin and tests for OpenStack EC2 API
