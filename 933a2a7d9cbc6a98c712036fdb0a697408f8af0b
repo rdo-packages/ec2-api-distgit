@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_a8811491",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 127
+      },
+      "writtenOn": "2017-09-07T11:36:03Z",
+      "side": 1,
+      "message": "can you format this as a normal git commit message\n\nit\u0027s missing a blank line between first line (summary) and rest of commit message details.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 26
+      },
+      "revId": "933a2a7d9cbc6a98c712036fdb0a697408f8af0b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
