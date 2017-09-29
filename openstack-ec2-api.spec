@@ -185,9 +185,9 @@ popd
 %endif
 
 # generate html docs
-sphinx-build doc/source html
+%{__python2} setup.py build_sphinx -b html
 # remove the sphinx-build leftovers
-rm -rf html/.{doctrees,buildinfo}
+rm -rf doc/build/html/.{doctrees,buildinfo}
 
 %install
 %{__python2} setup.py install --skip-build --root %{buildroot}
@@ -274,7 +274,7 @@ exit 0
 
 
 %files -n python-%{pypi_name}-doc
-%doc html
+%doc doc/build/html
 
 %files -n python-%{pypi_name}-tests
 %license LICENSE
