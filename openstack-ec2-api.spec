@@ -282,3 +282,4 @@ exit 0
 %{python2_sitelib}/ec2_api_tests.egg-info
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/ec2-api/commit/?id=aaf1fc94f89b4b3fc312c6eb768b61e5fb3267c3
