@@ -28,6 +28,7 @@ Source6:        policy.json
 
 BuildArch:      noarch
 
+BuildRequires:  git
 BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
 BuildRequires:  python-pbr >= 2.0.0
@@ -162,7 +163,7 @@ Requires:   python2-%{pypi_name} = %{version}-%{release}
 Tempest plugin and unit tests for OpenStack EC2 API
 
 %prep
-%autosetup -n %{pypi_name}-%{upstream_version}
+%autosetup -n %{pypi_name}-%{upstream_version} -S git
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
