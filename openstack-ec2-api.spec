@@ -150,12 +150,12 @@ BuildRequires:  python2-openstackdocstheme
 Documentation for OpenStack EC2 API
 
 %package -n python-%{pypi_name}-tests
-Summary:        Tempest plugin and tests for OpenStack EC2 API
+Summary:    Tests for OpenStack EC2 API
 
 Requires:   python2-%{pypi_name} = %{version}-%{release}
 
 %description -n python-%{pypi_name}-tests
-Tempest plugin and unit tests for OpenStack EC2 API
+Unit tests for OpenStack EC2 API
 
 %prep
 %autosetup -n %{pypi_name}-%{upstream_version} -S git
@@ -187,10 +187,6 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 
 %install
 %{__python2} setup.py install --skip-build --root %{buildroot}
-
-%global service ec2-api
-# Create fake egg-info for the tempest plugin
-%py2_entrypoint ec2_api %{service}
 
 %if 0%{?with_python3}
 pushd %{py3dir}
@@ -275,6 +271,5 @@ exit 0
 %files -n python-%{pypi_name}-tests
 %license LICENSE
 %{python2_sitelib}/ec2api/tests
-%{python2_sitelib}/ec2_api_tests.egg-info
 
 %changelog
