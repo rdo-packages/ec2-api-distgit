@@ -30,8 +30,8 @@ BuildArch:      noarch
 
 BuildRequires:  git
 BuildRequires:  python2-devel
-BuildRequires:  python-setuptools
-BuildRequires:  python-pbr >= 2.0.0
+BuildRequires:  python2-setuptools
+BuildRequires:  python2-pbr >= 2.0.0
 BuildRequires:  systemd
 BuildRequires:  openstack-macros
 
@@ -45,45 +45,39 @@ Summary:        Support of EC2 API for OpenStack
 %{?python_provide:%python_provide python2-%{pypi_name}}
 
 Requires: python-anyjson >= 0.3.3
-Requires: python-babel >= 2.3.4
-Requires: python-boto >= 2.32.1
-Requires: python-botocore >= 1.0.0
-Requires: python-eventlet >= 0.18.2
-Requires: python-greenlet >= 0.3.2
-Requires: python-httplib2 >= 0.7.5
-Requires: python-iso8601 >= 0.1.9
-Requires: python-jsonschema >= 2.0.0
-Requires: python-keystoneauth1 >= 3.1.0
-Requires: python-lxml >= 2.3
-Requires: python-oslo-cache >= 1.5.0
-Requires: python-oslo-config >= 2:4.0.0
-Requires: python-oslo-concurrency >= 3.8.0
-Requires: python-oslo-context >= 2.14.0
-Requires: python-oslo-db >= 4.15.0
-Requires: python-oslo-log >= 3.30.0
-Requires: python-oslo-messaging >= 5.14.0
-Requires: python-oslo-serialization >= 1.10.0
-Requires: python-oslo-service >= 1.10.0
-Requires: python-oslo-utils >= 3.20.0
-Requires: python-paramiko >= 1.13.0
+Requires: python2-babel >= 2.3.4
+Requires: python2-botocore >= 1.5.1
+Requires: python2-eventlet >= 0.18.2
+Requires: python2-greenlet >= 0.4.10
+Requires: python-httplib2 >= 0.9.1
+Requires: python2-iso8601 >= 0.1.9
+Requires: python2-jsonschema >= 2.0.0
+Requires: python2-keystoneauth1 >= 3.3.0
+Requires: python-lxml >= 3.2.1
+Requires: python2-oslo-cache >= 1.26.0
+Requires: python2-oslo-config >= 2:5.1.0
+Requires: python2-oslo-concurrency >= 3.25.0
+Requires: python2-oslo-context >= 2.19.2
+Requires: python2-oslo-db >= 4.27.0
+Requires: python2-oslo-log >= 3.36.0
+Requires: python2-oslo-serialization >= 2.18.0
+Requires: python2-oslo-service >= 1.24.0
+Requires: python2-oslo-utils >= 3.33.0
 Requires: python-paste
 Requires: python-paste-deploy >= 1.5.0
-Requires: python-pbr >= 2.0.0
-Requires: python-pyasn1
-Requires: python-pyasn1-modules
-Requires: python-cinderclient >= 3.1.0
-Requires: python-glanceclient >= 1:2.8.0
-Requires: python-keystoneclient >= 1:3.8.0
-Requires: python-neutronclient >= 6.3.0
-Requires: python-novaclient >= 1:9.1.0
-Requires: python-openstackclient >= 3.3.0
-Requires: python-routes >= 2.3.1
-Requires: python-six >= 1.9.0
-Requires: python-sqlalchemy >= 1.0.10
+Requires: python2-pbr >= 2.0.0
+Requires: python2-cinderclient >= 3.3.0
+Requires: python2-glanceclient >= 1:2.8.0
+Requires: python2-keystoneclient >= 1:3.8.0
+Requires: python2-neutronclient >= 6.3.0
+Requires: python2-novaclient >= 1:9.1.0
+Requires: python2-openstackclient >= 3.12.0
+Requires: python2-routes >= 2.3.1
+Requires: python2-six >= 1.10.0
+Requires: python2-sqlalchemy >= 1.0.10
 Requires: python-migrate >= 0.11.0
-Requires: python-stevedore >= 1.3.0
 Requires: python-webob >= 1.7.1
-Requires: python-cryptography >= 1.6
+Requires: python2-cryptography >= 1.7.2
 
 %description -n python2-%{pypi_name}
 %{common_desc}
@@ -97,7 +91,7 @@ Summary:        Support of EC2 API for OpenStack
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr >= 2.0.0
-BuildRequires:  python-tools
+BuildRequires:  python3-tools
 
 Requires: python3-anyjson >= 0.3.3
 Requires: python3-babel >= 1.3
@@ -147,8 +141,8 @@ Requires: python3-cryptography >= 1.6
 %package -n python-%{pypi_name}-doc
 Summary:        Documentation for OpenStack EC2 API
 
-BuildRequires:  python-sphinx
-BuildRequires:  python-openstackdocstheme
+BuildRequires:  python2-sphinx
+BuildRequires:  python2-openstackdocstheme
 
 %description -n python-%{pypi_name}-doc
 %{common_desc}
