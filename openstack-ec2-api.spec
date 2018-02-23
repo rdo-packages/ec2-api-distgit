@@ -1,24 +1,30 @@
 %global pypi_name ec2-api
 
+
 %if 0%{?fedora}
 # FIXME: python3 clients are not packaged yet
 %global with_python3 0
 %{!?python3_shortver: %global python3_shortver %(%{__python3} -c 'import sys; print(str(sys.version_info.major) + "." + str(sys.version_info.minor))')}
 %endif
 
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%global upstream_name ec2-api
+%global commit ec59a03f95bba0b566ca131ae9409d5cfbd56c92
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
 
 %global common_desc \
 Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        5.1.0
+Release:        0.1%{?alphatag}%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
 URL:            https://launchpad.net/ec2-api
-Source0:        https://pypi.io/packages/source/e/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+Source0:        https://github.com/openstack/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 Source1:        openstack-ec2-api.service
 Source2:        openstack-ec2-api-metadata.service
 Source3:        openstack-ec2-api-s3.service
@@ -278,3 +284,6 @@ exit 0
 %{python2_sitelib}/ec2_api_tests.egg-info
 
 %changelog
+* Fri Feb 23 2018 Alfredo Moralejo <amoralej@redhat.com> 5.1.0-01.ec59a03git
+- Update to pre 5.1.0 (ec59a03f95bba0b566ca131ae9409d5cfbd56c92)
+
