@@ -12,8 +12,8 @@
 Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        7.0.0
+Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
@@ -273,3 +273,6 @@ exit 0
 %{python2_sitelib}/ec2api/tests
 
 %changelog
+* Thu Aug 16 2018 RDO <dev@lists.rdoproject.org> 7.0.0-1
+- Update to 7.0.0
+
