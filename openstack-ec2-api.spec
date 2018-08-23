@@ -12,7 +12,7 @@
 Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
-Version:        7.0.0
+Version:        7.1.0
 Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
@@ -273,6 +273,9 @@ exit 0
 %{python2_sitelib}/ec2api/tests
 
 %changelog
+* Thu Aug 23 2018 RDO <dev@lists.rdoproject.org> 7.1.0-1
+- Update to 7.1.0
+
 * Thu Aug 16 2018 RDO <dev@lists.rdoproject.org> 7.0.0-1
 - Update to 7.0.0
 
