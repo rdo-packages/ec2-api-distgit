@@ -11,6 +11,8 @@
 # End of macros for py2/py3 compatibility
 %global pypi_name ec2-api
 
+%global with_doc 0
+
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 %global common_desc \
@@ -98,6 +100,7 @@ Requires: python%{pyver}-migrate >= 0.11.0
 %description -n python%{pyver}-%{pypi_name}
 %{common_desc}
 
+%if 0%{?with_doc}
 # Documentation package
 %package -n python%{pyver}-%{pypi_name}-doc
 Summary:        Documentation for OpenStack EC2 API
@@ -110,6 +113,7 @@ BuildRequires:  python%{pyver}-openstackdocstheme
 %{common_desc}
 
 Documentation for OpenStack EC2 API
+%endif
 
 %package -n python%{pyver}-%{pypi_name}-tests
 Summary:    Tests for OpenStack EC2 API
@@ -131,10 +135,12 @@ cp %{SOURCE5} etc/ec2api/ec2api.conf.sample
 %build
 %{pyver_build}
 
+%if 0%{?with_doc}
 # generate html docs
 %{pyver_bin} setup.py build_sphinx -b html
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
+%endif
 
 %install
 %{pyver_install}
@@ -188,8 +194,10 @@ exit 0
 %{_unitdir}/openstack-ec2-api-manage.service
 %dir %attr(0750, ec2api, ec2api) %{_localstatedir}/log/ec2api
 
+%if 0%{?with_doc}
 %files -n python%{pyver}-%{pypi_name}-doc
 %doc doc/build/html
+%endif
 
 %files -n python%{pyver}-%{pypi_name}-tests
 %license LICENSE
