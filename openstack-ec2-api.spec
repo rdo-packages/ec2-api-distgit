@@ -137,7 +137,7 @@ cp %{SOURCE5} etc/ec2api/ec2api.conf.sample
 
 %if 0%{?with_doc}
 # generate html docs
-%{pyver_bin} setup.py build_sphinx -b html
+sphinx-build-%{pyver} -W -b html -d doc/build/doctrees doc/source doc/build/html
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
