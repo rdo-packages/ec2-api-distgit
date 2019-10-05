@@ -204,3 +204,4 @@ exit 0
 %{pyver_sitelib}/ec2api/tests
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/ec2-api/commit/?id=f35ffb70b5ca3f6c31651992fd33d6afa72af42b
