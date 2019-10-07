@@ -1,0 +1,9 @@
+Code-Review+2: Javier Peña <jpena@redhat.com>
+Code-Review+1: Lee Yarwood <lyarwood@redhat.com>
+Workflow+1: Javier Peña <jpena@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 07 Oct 2019 08:35:19 +0000
+Reviewed-on: https://review.rdoproject.org/r/22967
+Project: openstack/ec2-api-distgit
+Branch: refs/heads/rpm-master
