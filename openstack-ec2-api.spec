@@ -1,4 +1,3 @@
-%global milestone .0rc1
 # Macros for py2/py3 compatibility
 %if 0%{?fedora} || 0%{?rhel} > 7
 %global pyver %{python3_pkgversion}
@@ -21,14 +20,12 @@ Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
 Version:        9.0.0
-Release:        0.1%{?milestone}%{?dist}
+Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
 URL:            https://launchpad.net/ec2-api
 Source0:        http://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-9.0.0.0rc1.tar.gz
-#
-# patches_base=9.0.0.0rc1
 #
 
 Source1:        openstack-ec2-api.service
@@ -209,6 +206,9 @@ exit 0
 %{pyver_sitelib}/ec2api/tests
 
 %changelog
+* Wed Oct 16 2019 RDO <dev@lists.rdoproject.org> 9.0.0-1
+- Update to 9.0.0
+
 * Mon Sep 30 2019 RDO <dev@lists.rdoproject.org> 9.0.0-0.1.0rc1
 - Update to 9.0.0.0rc1
 
