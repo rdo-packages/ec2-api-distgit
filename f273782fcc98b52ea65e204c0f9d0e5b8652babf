@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f72cf814_9c6cea29",
+        "filename": "openstack-ec2-api.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-04-28T12:58:07Z",
+      "side": 1,
+      "message": "this too",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 34
+      },
+      "revId": "f273782fcc98b52ea65e204c0f9d0e5b8652babf",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a284ffc_cb2c2a45",
+        "filename": "openstack-ec2-api.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-04-28T12:58:07Z",
+      "side": 1,
+      "message": "this too",
+      "range": {
+        "startLine": 48,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 37
+      },
+      "revId": "f273782fcc98b52ea65e204c0f9d0e5b8652babf",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "34f9dc98_18c8b847",
+        "filename": "openstack-ec2-api.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-04-28T12:58:07Z",
+      "side": 1,
+      "message": "can be cleaned up",
+      "range": {
+        "startLine": 71,
+        "startChar": 0,
+        "endLine": 71,
+        "endChar": 34
+      },
+      "revId": "f273782fcc98b52ea65e204c0f9d0e5b8652babf",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
