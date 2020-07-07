@@ -154,7 +154,7 @@ exit 0
 %doc README.rst
 %{python3_sitelib}/ec2api
 %exclude %{python3_sitelib}/ec2api/tests
-%{python3_sitelib}/ec2_api-*-py?.?.egg-info
+%{python3_sitelib}/ec2_api-*-py%{python3_version}.egg-info
 
 %files
 %{_bindir}/%{pypi_name}*
