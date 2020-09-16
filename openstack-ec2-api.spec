@@ -40,7 +40,7 @@ Requires: python3-ec2-api = %{version}-%{release}
 Summary:        Support of EC2 API for OpenStack
 %{?python_provide:%python_provide python3-%{pypi_name}}
 
-Requires: python3-botocore >= 1.9.1
+Requires: python3-botocore >= 1.9.7
 Requires: python3-eventlet >= 0.20.0
 Requires: python3-greenlet >= 0.4.13
 Requires: python3-keystoneauth1 >= 3.14.0
