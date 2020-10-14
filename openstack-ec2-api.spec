@@ -1,4 +1,3 @@
-%global milestone .0rc1
 %global pypi_name ec2-api
 
 %global with_doc 1
@@ -10,14 +9,12 @@ Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
 Version:        11.0.0
-Release:        0.1%{?milestone}%{?dist}
+Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
 URL:            https://launchpad.net/ec2-api
 Source0:        https://tarballs.opendev.org/openstack/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz
-#
-# patches_base=11.0.0.0rc1
 #
 
 Source1:        openstack-ec2-api.service
@@ -183,6 +180,9 @@ exit 0
 %{python3_sitelib}/ec2api/tests
 
 %changelog
+* Wed Oct 14 2020 RDO <dev@lists.rdoproject.org> 11.0.0-1
+- Update to 11.0.0
+
 * Thu Sep 24 2020 RDO <dev@lists.rdoproject.org> 11.0.0-0.1.0rc1
 - Update to 11.0.0.0rc1
 
