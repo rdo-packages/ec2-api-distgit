@@ -19,7 +19,7 @@
 Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
-Version:        9.0.0
+Version:        9.0.1
 Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
@@ -206,6 +206,9 @@ exit 0
 %{pyver_sitelib}/ec2api/tests
 
 %changelog
+* Mon Feb 01 2021 RDO <dev@lists.rdoproject.org> 9.0.1-1
+- Update to 9.0.1
+
 * Wed Oct 16 2019 RDO <dev@lists.rdoproject.org> 9.0.0-1
 - Update to 9.0.0
 
