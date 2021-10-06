@@ -1,4 +1,3 @@
-%global milestone .0rc2
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
 %global sources_gpg_sign 0x4c29ff0e437f3351fd82bdf47c5a3bc787dc7035
 %global pypi_name ec2-api
@@ -12,13 +11,12 @@ Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
 Version:        13.0.0
-Release:        0.2%{?milestone}%{?dist}
+Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
 URL:            https://launchpad.net/ec2-api
 Source0:        https://tarballs.opendev.org/openstack/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz
-# patches_base=13.0.0.0rc2
 
 Source1:        openstack-ec2-api.service
 Source2:        openstack-ec2-api-metadata.service
@@ -197,6 +195,9 @@ exit 0
 %{python3_sitelib}/ec2api/tests
 
 %changelog
+* Wed Oct 06 2021 RDO <dev@lists.rdoproject.org> 13.0.0-1
+- Update to 13.0.0
+
 * Thu Sep 30 2021 RDO <dev@lists.rdoproject.org> 13.0.0-0.2.0rc1
 - Update to 13.0.0.0rc2
 
