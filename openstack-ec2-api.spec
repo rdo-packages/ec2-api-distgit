@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x2426b928085a020d8a90d0d879ab7008d0896c8a
+%global sources_gpg_sign 0x01527a34f0d0080f8a5db8d6eb6c5df21b4b6363
 %global pypi_name ec2-api
 
 %global with_doc 1
@@ -10,7 +10,7 @@
 Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
-Version:        11.0.0
+Version:        11.1.0
 Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
@@ -196,6 +196,9 @@ exit 0
 %{python3_sitelib}/ec2api/tests
 
 %changelog
+* Mon Jan 24 2022 RDO <dev@lists.rdoproject.org> 11.1.0-1
+- Update to 11.1.0
+
 * Wed Oct 14 2020 RDO <dev@lists.rdoproject.org> 11.0.0-1
 - Update to 11.0.0
 - Enable sources tarball validation using GPG signature.
