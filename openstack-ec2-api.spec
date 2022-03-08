@@ -11,7 +11,7 @@ Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
 Version:        14.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
@@ -29,6 +29,12 @@ Source6:        policy.json
 %if 0%{?sources_gpg} == 1
 Source101:        https://tarballs.opendev.org/openstack/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz.asc
 Source102:        https://releases.openstack.org/_static/%{sources_gpg_sign}.txt
+%endif
+%if 0%{?dlrn} == 0
+# This patch was not included in Yoga final release but is needed.
+# Patch has been submitted upstream at https://review.opendev.org/c/openstack/releases/+/837128
+# This should be removed in next release.
+Patch001:       0001-Add-Python3-zed-unit-tests.patch
 %endif
 
 BuildArch:      noarch
@@ -197,6 +203,9 @@ exit 0
 %{python3_sitelib}/ec2api/tests
 
 %changelog
+* Fri Apr 08 2022 Joel Capitao <jcapitao@redhat.com> 14.0.0-2
+- Rename tenant with project_id
+
 * Wed Mar 30 2022 RDO <dev@lists.rdoproject.org> 14.0.0-1
 - Update to 14.0.0
 
