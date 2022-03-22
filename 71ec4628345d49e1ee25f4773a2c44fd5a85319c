@@ -16,6 +16,24 @@
       "message": "In fact we need to remove it during %prep (see [1] for example) as automatic requirements is enabled and we don\u0027t need it as runtime dep.\n\n[1] https://review.rdoproject.org/r/c/openstack/oslo-service-distgit/+/40360/2/python-oslo-service.spec#117",
       "revId": "71ec4628345d49e1ee25f4773a2c44fd5a85319c",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d4c008a_50d34e82",
+        "filename": "openstack-ec2-api.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-03-22T08:32:59Z",
+      "side": 1,
+      "message": "the example above just remove the version, but here we need to remove the whole line",
+      "parentUuid": "fa6ab6b9_dd23208c",
+      "revId": "71ec4628345d49e1ee25f4773a2c44fd5a85319c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
