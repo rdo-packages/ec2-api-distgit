@@ -82,6 +82,7 @@ Requires: python3-lxml >= 4.1.1
 Requires: python3-paste >= 2.0.3
 Requires: python3-paste-deploy >= 1.5.2
 Requires: python3-migrate >= 0.11.0
+Requires: python-babel >= 2.5.3
 
 %description -n python3-%{pypi_name}
 %{common_desc}
