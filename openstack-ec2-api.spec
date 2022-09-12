@@ -73,7 +73,6 @@ Requires: python3-neutronclient >= 6.7.0
 Requires: python3-novaclient >= 1:10.1.0
 Requires: python3-openstackclient >= 3.14.0
 Requires: python3-routes >= 2.4.1
-Requires: python3-six >= 1.11.0
 Requires: python3-sqlalchemy >= 1.2.5
 Requires: python3-webob >= 1.7.4
 Requires: python3-cryptography >= 2.1.4
