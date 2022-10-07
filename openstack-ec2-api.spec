@@ -77,6 +77,7 @@ Requires: python3-openstackclient >= 3.14.0
 Requires: python3-routes >= 2.4.1
 Requires: python3-six >= 1.11.0
 Requires: python3-sqlalchemy >= 1.2.5
+Requires: python3-sqlalchemy < 1.4.0
 Requires: python3-webob >= 1.7.4
 Requires: python3-cryptography >= 2.1.4
 Requires: python3-httplib2 >= 0.10.3
