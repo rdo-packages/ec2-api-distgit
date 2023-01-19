@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x4c29ff0e437f3351fd82bdf47c5a3bc787dc7035
+%global sources_gpg_sign 0xa7475c5f2122fec3f90343223fe3bf5aad1080e4
 %global pypi_name ec2-api
 
 %global with_doc 1
@@ -10,7 +10,7 @@
 Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
-Version:        13.0.0
+Version:        13.0.1
 Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
@@ -120,6 +120,9 @@ Unit tests for OpenStack EC2 API
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
+# let RPM handle runtime deps
+rm -rf %{test-,}requirements.txt
+
 # Copy our own conf file
 cp %{SOURCE5} etc/ec2api/ec2api.conf.sample
 
@@ -195,6 +198,9 @@ exit 0
 %{python3_sitelib}/ec2api/tests
 
 %changelog
+* Thu Jan 19 2023 RDO <dev@lists.rdoproject.org> 13.0.1-1
+- Update to 13.0.1
+
 * Wed Oct 06 2021 RDO <dev@lists.rdoproject.org> 13.0.0-1
 - Update to 13.0.0
 
