@@ -115,7 +115,6 @@ Unit tests for OpenStack EC2 API
 %{gpgverify}  --keyring=%{SOURCE102} --signature=%{SOURCE101} --data=%{SOURCE0}
 %endif
 %autosetup -n %{pypi_name}-%{upstream_version} -S git
-sed -i '/Babel/d' requirements.txt
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
