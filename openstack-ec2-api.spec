@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x01527a34f0d0080f8a5db8d6eb6c5df21b4b6363
+%global sources_gpg_sign 0x815AFEC729392386480E076DCC0DFE2D21C023C9
 %global pypi_name ec2-api
 
 %global with_doc 1
@@ -10,8 +10,8 @@
 Support of EC2 API for OpenStack.
 
 Name:           openstack-%{pypi_name}
-Version:        14.0.0
-Release:        2%{?dist}
+Version:        14.0.2
+Release:        1%{?dist}
 Summary:        OpenStack Ec2api Service
 
 License:        ASL 2.0
@@ -203,6 +203,9 @@ exit 0
 %{python3_sitelib}/ec2api/tests
 
 %changelog
+* Fri Jul 28 2023 RDO <dev@lists.rdoproject.org> 14.0.2-1
+- Update to 14.0.2
+
 * Fri Apr 08 2022 Joel Capitao <jcapitao@redhat.com> 14.0.0-2
 - Rename tenant with project_id
 
