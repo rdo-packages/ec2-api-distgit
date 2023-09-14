@@ -1,0 +1,8 @@
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Thu, 14 Sep 2023 06:11:48 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/ec2-api-distgit/+/50019
+Project: openstack/ec2-api-distgit
+Branch: refs/heads/bobcat-rdo
